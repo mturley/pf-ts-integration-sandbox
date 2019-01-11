@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Avatar, DropdownItem } from "@patternfly/react-core";
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -11,6 +12,8 @@ class App extends Component {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
+          <Avatar alt="avatar" />
+          <DropdownItem>Test</DropdownItem>
           <a
             className="App-link"
             href="https://reactjs.org"

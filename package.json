@@ -14,9 +14,10 @@
     "typescript": "3.2.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3030 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "start-and-test": "start-server-and-test start http://localhost:3030 test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +28,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/puppeteer": "^1.11.1",
+    "puppeteer": "^1.11.0",
+    "start-server-and-test": "^1.7.11"
+  }
 }
